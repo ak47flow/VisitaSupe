@@ -127,7 +127,13 @@ body {
     border-radius: 16px;
     background-size: cover !important;
     position: relative;
+    transition: transform 0.5s ease-in-out;
 }
+
+.contenido .img-big .img-card:hover {
+    transform: scale(1.05);
+}
+
 .contenido .img-big h3 {
     color: #FFF;
     font-size: 24px;
@@ -136,6 +142,7 @@ body {
     line-height: 140%;
     margin-bottom: 0;
 }
+
 @media (max-width: 500px) {
     .img-big{
         margin-top: 30px;
@@ -147,7 +154,13 @@ body {
     background-size: cover !important;
     height: 47%;
     position: relative;
+    transition: transform 0.5s ease-in-out;
 }
+
+.contenido .img-small .img-big:hover {
+    transform: scale(1.05);
+}
+
 @media (max-width: 575.98px) {
     .contenido .img-small .img-big {
         height: 156px;
@@ -159,8 +172,10 @@ body {
     width: 100%;
     height: 630px;
     margin-bottom: 50px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
-
 
 @media (max-width: 500px) {
     .dropdown-menu a{
@@ -169,8 +184,11 @@ body {
     .img-central {
         width: 100%;
         height: auto;
-        padding: 15px;
-        border-radius: 50px;
+        padding: 10px;
+        border-radius: 35px;
+    }
+    .contenido{
+        padding: 50px 0;
     }
 }
 
@@ -196,4 +214,16 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+/* Añadir animación cuando la imagen se desliza hacia arriba */
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
