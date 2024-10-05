@@ -107,9 +107,8 @@ body {
 }
 
 .contenido{
-    padding: 140px 11px;
+    padding: 140px 0px;
 }
-
 
 .title{
     font-size: 50px;
@@ -159,7 +158,7 @@ body {
 .img-central {
     width: 100%;
     height: 630px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 
@@ -168,11 +167,10 @@ body {
         padding: 10px;
     }
     .img-central {
-        margin: 50px 0px;
-        padding: 0 10px;
         width: 100%;
         height: auto;
-        border-radius: 16px;
+        padding: 15px;
+        border-radius: 50px;
     }
 }
 
