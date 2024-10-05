@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Página Turística</title>
+</head>
+
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Logotipo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="lugaresTuristicosDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Lugares Turísticos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="lugaresTuristicosDropdown">
+                            <li><a class="dropdown-item" href="#">Zonas Arqueológicas</a></li>
+                            <li><a class="dropdown-item" href="#">Museos</a></li>
+                            <li><a class="dropdown-item" href="#">Playas</a></li>
+                            <li><a class="dropdown-item" href="#">Otros Lugares Turísticos</a></li>
+                            <li><a class="dropdown-item" href="#">Ver todos</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="serviciosTuristicosDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Servicios Turísticos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="serviciosTuristicosDropdown">
+                            <li><a class="dropdown-item" href="#">Donde Comer</a></li>
+                            <li><a class="dropdown-item" href="#">Donde Hospedarse</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Festividades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Calidad Turística</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cómo Llegar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Slider con imágenes -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/caral-principal.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="img/playa_la_isla1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="img/laslomas.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!--Sección de contenido-->
+    <div class="container contenido">
+        <div class="row">
+            <div class="col-md-5 d-flex justify-content-center flex-column d-md-flex w100">
+                <h1 class="title">Descubre Supe: Cultura, Historia y Naturaleza</h1>
+                <p>Bienvenido a Supe, el lugar donde historia y naturaleza se encuentran. Desde la civilización más
+                    antigua de América hasta playas paradisíacas, Supe es un destino imperdible para quienes buscan
+                    experiencias únicas.</p>
+            </div>
+            <div class="col-12 col-md-3 img-big">
+                <a href="#" style="color: #fff; text-decoration: none;">
+                    <div class="img-card d-flex align-items-center justify-content-center"
+                        style="background: linear-gradient(0deg, rgba(24, 24, 24, 0.55) 0%, rgba(24, 24, 24, 0.55) 100%), url('../img/que_visitar.jpg'), lightgray 50% / cover no-repeat;">
+                        <h3 class="texto-card">¿Qué visitar?</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4 img-small d-flex justify-content-between flex-column">
+                <div class="img-big d-flex align-items-center justify-content-center"
+                    style="background: linear-gradient(0deg, rgba(24, 24, 24, 0.55) 0%, rgba(24, 24, 24, 0.55) 100%), url('../img/hospedarse.jpg'), lightgray 50% / cover no-repeat;cursor: pointer;"
+                    onclick="window.location='../experiencias.html';">
+                    <h3 class="texto-card">¿Dónde hospedarse? </h3>
+                </div>
+                <div class="img-big d-flex align-items-center justify-content-center"
+                    style="background: linear-gradient(0deg, rgba(24, 24, 24, 0.55) 0%, rgba(24, 24, 24, 0.55) 100%), url('../img/donde_comer.jpg'), lightgray 50% / cover no-repeat;cursor: pointer;"
+                    onclick="window.location='#';">
+                    <h3 class="texto-card">¿Dónde comer?</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de imagen -->
+    <div class="container-fuild">
+        <img src="img/tamal.jpg" alt="" class="img-central">
+    </div>
+
+    <!-- Sección de contacto normal -->
+    <footer class="text-center text-lg-start">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Contáctanos</h5>
+                    <p>Información de contacto y redes sociales.</p>
+                </div>
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Síguenos</h5>
+                    <p>Enlaces a redes sociales.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
