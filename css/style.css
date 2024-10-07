@@ -227,3 +227,25 @@ footer a:hover {
         opacity: 1;
     }
 }
+
+
+/*Zonas Arqueologicas*/
+.card {
+    height: 100%;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.card-title {
+    font-size: 1.5em;
+    margin: 0 0 10px;
+}
+.card-description {
+    font-size: 1em;
+    color: #555;
+}
