@@ -111,9 +111,11 @@ body {
 }
 
 .title{
-    font-size: 50px;
+    font-size: 48px;
+    font-style: normal;
     font-weight: 600;
-    margin-bottom: 16px;
+    line-height: 140%;
+    margin-bottom: 0;
 }
 
 .contenido p{
@@ -230,11 +232,19 @@ footer a:hover {
 
 
 /*Zonas Arqueologicas*/
-.card {
-    height: 100%;
+
+.card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin-bottom: 25px;
 }
 
-.card img {
+
+
+/*.card img {
     width: 100%;
     height: 200px;
     object-fit: cover;
@@ -242,10 +252,11 @@ footer a:hover {
     border-top-right-radius: 8px;
 }
 .card-title {
-    font-size: 1.5em;
+    font-size: 24px;
+    font-weight: 600;
     margin: 0 0 10px;
 }
 .card-description {
     font-size: 1em;
     color: #555;
-}
+}*/

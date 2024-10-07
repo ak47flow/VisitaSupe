@@ -8,12 +8,16 @@
     <link rel="stylesheet" href="../css/style.css">
   </head>
   <body>
+    <!-- Barra de navegación -->
+    <div id="navbar" class="sticky-top"></div>
+
+    <!-- Sección de cards -->
     <div class="container">
-        <h1 class="text-center my-4">Zonas Arqueológicas de Supe Pueblo</h1>
+        <h1 class="title my-4">Zonas Arqueológicas de Supe Pueblo</h1>
         <div class="row">
             <div class="col-md-4 mb-4">
                 <div class="card h-100">
-                    <img src="../img/caral-card.jpg" class="card-img-top" alt="Zona Arqueológica 1">
+                    <img src="../img/caral-card.jpg" class="card-img" alt="Zona Arqueológica 1">
                     <div class="card-body">
                         <h2 class="card-title">Ciudad Sagrada de Caral</h2>
                         <p class="card-text">Posible descripción</p>
@@ -38,8 +42,47 @@
                     </div>
                 </div>
             </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Zona Arqueológica 3">
+                    <div class="card-body">
+                        <h2 class="card-title">Zona Arqueológica 3</h2>
+                        <p class="card-text">Posible descripción</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Zona Arqueológica 3">
+                    <div class="card-body">
+                        <h2 class="card-title">Zona Arqueológica 3</h2>
+                        <p class="card-text">Posible descripción</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Zona Arqueológica 3">
+                    <div class="card-body">
+                        <h2 class="card-title">Zona Arqueológica 3</h2>
+                        <p class="card-text">Posible descripción</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+        <!-- Sección de contacto normal (footer)-->
+    <div id="footer"></div>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#navbar").load("../components/navbar.html");
+            $("#footer").load("../components/footer.html");
+        });
+    </script>
+
+
+</body>
 </html>
