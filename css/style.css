@@ -9,25 +9,24 @@ body {
 
 .navbar {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    background: linear-gradient(45deg, #FF9800, #FF6347);
-    padding: 12px;
+    background: linear-gradient(to right, #7B2CBF, #3A86FF);
     font-size: 15px;
     font-weight: 600;
 }
 
 .navbar-brand {
-    color: #fff;
+    color: white;
     font-weight: bold;
 }
 
 .navbar-nav .nav-link {
     color: #fff;
-    margin-right: 15px;
+    margin-right: 30px;
     transition: color 0.3s;
 }
 
 .navbar-nav .nav-link:hover {
-    color: #17202a;
+    color: black;
 }
 
 .navbar-nav .dropdown-toggle::after {
@@ -51,7 +50,7 @@ body {
 }
 
 .dropdown-menu {
-    background: linear-gradient(45deg, #FF9800, #FF6347);
+    background: linear-gradient(to right, #7B2CBF, #3A86FF);
     left: 50%;
     transform: translateX(-50%);
     top: 100%;
@@ -76,7 +75,8 @@ body {
 }
 
 .dropdown-menu li:hover {
-    background: #FF5733;
+    background: #fff;
+    border-radius: 4px;
 }
 
 .dropdown-menu a {
@@ -111,11 +111,19 @@ body {
 }
 
 .title{
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    margin: 20px 0;
+}
+
+.title-h1{
     font-size: 48px;
     font-style: normal;
     font-weight: 600;
     line-height: 140%;
-    padding: 30px;
+    margin: 20px 0;
 }
 
 .contenido p{
@@ -195,9 +203,10 @@ body {
 }
 
 footer {
-    background: #343a40;
+    background: #2B2D42;
     color: #fff;
     padding: 40px 0;
+    margin-top: 40px;
 }
 
 footer h5 {
@@ -232,12 +241,27 @@ footer a:hover {
 
 
 /*Zonas Arqueologicas*/
+.card{
+    border-radius: 20px;
+}
 
 .card img{
     width: 100%;
     height: 200px;
     object-fit: cover;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    margin-bottom: 25px;
+    border-top-left-radius: 15px; 
+    border-top-right-radius: 15px;
+}
+
+.card-title{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/*Museos*/
+.detalles-box{
+    border-radius: 16px;
+    background: #aed6f1;
+    padding: 30px 24px;
+    margin-bottom: 20px;
 }
